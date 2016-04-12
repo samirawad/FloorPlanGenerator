@@ -1,0 +1,19 @@
+﻿<Window x:Class="FloorPlanGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="715.13" Width="800.361" Loaded="Window_Loaded_1">
+    <DockPanel LastChildFill="True">
+        <Button Content="No Hallways" Click="Button_Click_1" DockPanel.Dock="Top"/>
+        <Button Content="Hallways" Click="Button_Click_3" DockPanel.Dock="Top"/>
+        <Button Content="Regroup" DockPanel.Dock="Top" Click="Button_Click_4"/>
+        <Button Content="Add a single door" DockPanel.Dock="Top" Click="SingleDoor_Click"/>
+        <Button Content="Add Doors" DockPanel.Dock="Top" Click="AddDoors_click"/>
+        <Button Content="ClearDoors" DockPanel.Dock="Top" Click="ClearDoors_click"/>
+        <Button Content="Regroup and add Doors" DockPanel.Dock="Top" Click="DoAll_Click"/>
+        <Button Content="Reset" Click="Button_Click_2" DockPanel.Dock="Top"/>
+        <Label Content="Label" x:Name="labelCountRoom" DockPanel.Dock="Top"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+            <Canvas Name="MainCanvas" Width="1920" Height="1080" />
+        </ScrollViewer>
+    </DockPanel>
+</Window>
